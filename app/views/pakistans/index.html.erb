@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pakistans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pakistans.each do |pakistan| %>
+      <tr>
+        <td><%= link_to 'Show', pakistan %></td>
+        <td><%= link_to 'Edit', edit_pakistan_path(pakistan) %></td>
+        <td><%= link_to 'Destroy', pakistan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pakistan', new_pakistan_path %>

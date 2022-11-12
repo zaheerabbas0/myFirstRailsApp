@@ -1,0 +1,2 @@
+class Zaheer < ApplicationRecord
+end

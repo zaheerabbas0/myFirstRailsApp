@@ -1,0 +1,2 @@
+class Abba < ApplicationRecord
+end
